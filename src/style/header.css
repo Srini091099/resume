@@ -1,0 +1,154 @@
+/* header.css */
+
+/* Container styles */
+.container {
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+/* Headname styles */
+.headname {
+  padding: 20px;
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+/* Fontstyle styles */
+.fontstyle {
+  width: 200px;
+  color: #ffffff;
+  font-weight: bolder;
+  font-size: 30px;
+  cursor: pointer;
+  display: inline-block;
+  transition: width 0.3s, color 0.3s;
+}
+
+/* Fontstyle hover styles */
+.fontstyle:hover {
+  width: 400px;
+  color: #f9d949;
+}
+
+/* Para styles */
+.para {
+  width: 600px;
+  cursor: pointer;
+  transition: width 0.3s ease;
+}
+
+/* Para hover styles */
+.para:hover {
+  width: 550px;
+}
+
+.custom-img {
+  display: inline-block;
+  border-radius: 50%;
+  height: 400px;
+  width: 50%;
+  overflow: hidden; /* Hide overflowing parts of the image */
+  cursor: pointer;
+  transition: box-shadow 0.3s ease; /* Transition for box-shadow effect */
+}
+
+
+.custom-img:hover {
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.6); /* Box shadow on hover */
+}
+
+.custom-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  border-radius: 50%; 
+}
+
+
+.headingparts {
+  padding: 50px;
+  background-color: #ffffff;
+  margin-top: 20px;
+}
+
+
+.bgrad {
+  background-color: #e9ecee;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s, color 0.3s;
+  margin-bottom: 10px;
+}
+
+
+.bgrad:hover {
+  background-color: #0056b3;
+}
+
+.linkinside {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.linkinside:hover {
+  color: white;
+}
+.workhead {
+  margin-top: 10px;
+  padding: 50px;
+  background-color: #343a40;
+  color: #ffffff;
+}
+
+
+.workhead h3 {
+  background-color: #007bff;
+  font-size: 24px;
+  margin: 0;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+
+.workhead ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.workhead li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: #738004;
+  border-radius: 15px;
+  transform: scale(0.5); /* Adjusted scale value */
+  rotate: 0deg;
+  transition: all 0.5s ease; /* Added ease for smoother transition */
+}
+
+.box:hover {
+  transform: scale(1); /* Scale to normal size on hover */
+  rotate: 360deg;
+}
+.certtitle{
+  font-weight: bolder;
+  text-align: center;
+  color: rgb(148, 20, 41);
+}
+.certtitle:hover{
+  color: bisque;
+
+}
