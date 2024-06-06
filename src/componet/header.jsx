@@ -4,7 +4,7 @@ import asset4 from "../asset/15118.jpg";
 import sqlcert from "../asset/SqlCert.png";
 import  project1 from '../asset/ramcoMini.jpg'
 import  project2 from'../asset/kartimage.jpg'
-//import { ProgressBar } from "react-bootstrap";
+import { ProgressBar } from "react-bootstrap";
 
 
 export default function Header() {
