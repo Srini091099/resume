@@ -38,13 +38,13 @@ export default function Header() {
           return prevProgress + 1;
         } else {
           clearInterval(interval);
-          return progress;
+          return prevProgress;
         }
       });
     }, 100);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [[progress]]);
 
   const handleMouseEnter = (index) => {
     const updatedHovered = [...isHovered];
