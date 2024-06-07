@@ -9,7 +9,7 @@ import { ProgressBar } from "react-bootstrap";
 
 export default function Header() {
   const [showContent, setShowContent] = useState(false);
-  const [progress, setProgress] = useState(0);
+  const [progress, setProgress] = useState([]);
   const [hoveredSkill, setHoveredSkill] = useState([]);
 
   const [isHovered, setIsHovered] = useState([]);
