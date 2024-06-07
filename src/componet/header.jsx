@@ -10,7 +10,8 @@ import { ProgressBar } from "react-bootstrap";
 export default function Header() {
   const [showContent, setShowContent] = useState(false);
   const [progress, setProgress] = useState(0);
-  const [hoveredSkill, setHoveredSkill] = useState(null);
+  const [hoveredSkill, setHoveredSkill] = useState([]);
+
   const [isHovered, setIsHovered] = useState([]);
 
   const toggleContent = () => {
@@ -37,7 +38,7 @@ export default function Header() {
           return prevProgress + 1;
         } else {
           clearInterval(interval);
-          return prevProgress;
+          return progress;
         }
       });
     }, 100);
@@ -47,17 +48,21 @@ export default function Header() {
 
   const handleMouseEnter = (index) => {
     const updatedHovered = [...isHovered];
+    const updatedHoveredSkill = [...hoveredSkill]; 
     updatedHovered[index] = true;
+    updatedHoveredSkill[index] = columns[index].id; 
     setIsHovered(updatedHovered);
-    setHoveredSkill(columns[index].id);
-  };
-
+    setHoveredSkill(updatedHoveredSkill); 
+  }
   const handleMouseLeave = (index) => {
     const updatedHovered = [...isHovered];
+    const updatedHoveredSkill = [...hoveredSkill]; 
     updatedHovered[index] = false;
+    updatedHoveredSkill[index] = null; 
     setIsHovered(updatedHovered);
-    setHoveredSkill(null);
+    setHoveredSkill(updatedHoveredSkill); 
   };
+
 
   return (
     <div className="container">
