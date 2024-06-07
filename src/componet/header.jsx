@@ -30,9 +30,11 @@ export default function Header() {
     { id: 9, skills: "GITLAB", stopValue: 90 },
     { id: 10, skills: "Java Script", stopValue: 90 },
   ];
-
+   
   useEffect(() => {
+    
     const interval = setInterval(() => {
+     
       setProgress((prevProgress) => {
         if (prevProgress < 100) {
           return prevProgress + 1;
@@ -44,7 +46,7 @@ export default function Header() {
     }, 100);
 
     return () => clearInterval(interval);
-  }, [[progress]]);
+  }, [progress]);
 
   const handleMouseEnter = (index) => {
     const updatedHovered = [...isHovered];
